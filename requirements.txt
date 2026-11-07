@@ -1,0 +1,5 @@
+# Minimum supported versions; Python 3.11+.
+opencv-python>=4.8.1.78
+numpy>=1.26.0
+scipy>=1.11.3
+Pillow>=10.1.0
