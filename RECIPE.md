@@ -125,7 +125,7 @@ Prop the phone, choose a plain background and film one launch across the screen.
 
 ## Inspiration and credits
 
-Broadcast pitch overlays are the prior art: [Pitching Ninja's Paul Skenes four-pitch overlay](https://www.youtube.com/shorts/VcFRmNfdIbI) and [u/chonyyy's pitch-overlay project in r/learnmachinelearning](https://old.reddit.com/r/learnmachinelearning/comments/l3db4k/updated_automatically_overlaying_baseball_pitch/). No footage or code from either is included here.
+Broadcast pitch overlays are the prior art: [Pitching Ninja's Paul Skenes four-pitch overlay](https://www.youtube.com/shorts/VcFRmNfdIbI) and [u/chonyyy's pitch-overlay project in r/learnmachinelearning](https://old.reddit.com/r/learnmachinelearning/comments/l3db4k/updated_automatically_overlaying_baseball_pitch/), whose code is [chonyy/ML-auto-baseball-pitching-overlay](https://github.com/chonyy/ML-auto-baseball-pitching-overlay) and whose paper is "Automatic Baseball Pitch Overlay" (ACM ICMR 2021). That system detects the ball with a fine-tuned YOLOv4 model, tracks it with SORT, registers clips for camera shift, and fills missing detections by polynomial fitting. This tool is the small, manual cousin: colour detection with click-to-correct instead of a trained detector, and no fitting across gaps, because it was built to draw only what the camera saw. No footage or code from either is included here.
 
 This recipe combines persistent trails whose width encodes elapsed source time, release-aligned comparison, optional staggered launches, and observed-only geometry.
 

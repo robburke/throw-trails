@@ -111,3 +111,7 @@ The tests generate their own sample under an ignored local directory, check trut
 The detector is a starting point for bright objects against distinguishable backgrounds. It does not estimate 3D motion, infer hidden flight, automatically identify release/landing, or guarantee segmentation on arbitrary footage. No network, model weights, FFmpeg executable or cloud account is needed at runtime. Dependency installation is separate.
 
 Licence: MIT (see LICENSE).
+
+## Prior art
+
+Broadcast pitch overlays, and in particular [u/chonyyy's pitch-overlay project in r/learnmachinelearning](https://old.reddit.com/r/learnmachinelearning/comments/l3db4k/updated_automatically_overlaying_baseball_pitch/), whose code is [chonyy/ML-auto-baseball-pitching-overlay](https://github.com/chonyy/ML-auto-baseball-pitching-overlay) and whose paper is "Automatic Baseball Pitch Overlay" (ACM ICMR 2021). That system detects the ball with a fine-tuned YOLOv4 model, tracks it with SORT, registers clips for camera shift, and fills missing detections by polynomial fitting. This tool is the small, manual cousin: colour detection with click-to-correct instead of a trained detector, and no fitting across gaps, because it was built to draw only what the camera saw. Pitching Ninja's four-pitch overlays on YouTube are the look this reaches for.
